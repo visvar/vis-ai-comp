@@ -1,0 +1,18 @@
+{
+    "checkpointURL":"http://127.0.0.1:5002/",
+    "name":"EDMbasic",
+    "js":false,
+    "fixflags":[{
+        "config":"basic_rnn",
+        "bundle": "./Models/edm.mag",
+        "steps_per_iteration": 2,
+        "beam_size": 2,
+        "branch_factor": 2
+        }],
+    "needflags":[{
+        "numOut": "numOut",
+        "numSteps": "numSteps",
+        "temperature": "temperature"
+        }],
+    "description":"was only trained with 26 mid files so not good and always same"
+}

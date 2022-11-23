@@ -1,0 +1,19 @@
+{
+    "checkpointURL":"http://129.69.205.73:5002/",
+    "name":"allMetalAtt",
+    "js":false,
+    "fixflags":[{
+        "config":"attention_rnn",
+        "bundle": "./Models/all4metal.mag",
+        "steps_per_iteration": 2,
+        "beam_size": 2,
+        "branch_factor": 2
+        }],
+    "needflags":[{
+        "numOut": "numOut",
+        "numSteps": "numSteps",
+        "temperature": "temperature"
+        }],
+    "description":"attention_rnn trained on ~ 70000 metal samples with [64,64] layer size and 3000 steps"
+
+}

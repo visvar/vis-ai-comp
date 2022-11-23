@@ -1,0 +1,5 @@
+{
+    "checkpointURL":"https://storage.googleapis.com/magentadata/js/checkpoints/music_rnn/chord_pitches_improv",
+    "name":"improv_rnn",
+    "js":true
+}

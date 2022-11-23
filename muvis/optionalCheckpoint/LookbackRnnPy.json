@@ -1,0 +1,18 @@
+{
+    "checkpointURL":"http://127.0.0.1:5001/",
+    "name":"LookbackRnnPy",
+    "js":false,
+    "fixflags":[{
+        "config":"lookback_rnn",
+        "bundle": "./Models/lookback_rnn.mag",
+        "steps_per_iteration": 2,
+        "beam_size": 2,
+        "branch_factor": 2
+        }],
+    "needflags":[{
+        "numOut": "numOut",
+        "numSteps": "numSteps",
+        "temperature": "temperature"
+        }],
+    "description":"pretrained lookbackRNN from magenta python git"
+}

@@ -1,0 +1,18 @@
+{
+    "checkpointURL":"http://127.0.0.1:5001/",
+    "name":"BasicRnnPy",
+    "js":false,
+    "fixflags":[{
+        "config":"basic_rnn",
+        "bundle": "./Models/basic_rnn.mag",
+        "steps_per_iteration": 2,
+        "beam_size": 2,
+        "branch_factor": 2
+        }],
+    "needflags":[{
+        "numOut": "numOut",
+        "numSteps": "numSteps",
+        "temperature": "temperature"
+        }],
+    "description":"pretrained basicRNN from magenta python git"
+}

@@ -1,0 +1,19 @@
+{
+    "checkpointURL":"http://192.168.178.21:5000/",
+    "name":"FFbasic",
+    "js":false,
+    "fixflags":[{
+        "config":"basic_rnn",
+        "bundle": "./Models/ff.mag",
+        "steps_per_iteration": 2,
+        "beam_size": 2,
+        "branch_factor": 2
+        }],
+    "needflags":[{
+        "numOut": "numOut",
+        "numSteps": "numSteps",
+        "temperature": "temperature"
+        }],
+    "description":"was trained with ~600 mid files from final fantasy"
+
+}
