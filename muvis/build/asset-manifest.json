@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HAIComposition/static/css/main.e1a97a90.css",
-    "main.js": "/HAIComposition/static/js/main.dbee8f3c.js",
-    "static/js/787.0ddc7d4c.chunk.js": "/HAIComposition/static/js/787.0ddc7d4c.chunk.js",
-    "index.html": "/HAIComposition/index.html",
-    "main.e1a97a90.css.map": "/HAIComposition/static/css/main.e1a97a90.css.map",
-    "main.dbee8f3c.js.map": "/HAIComposition/static/js/main.dbee8f3c.js.map",
-    "787.0ddc7d4c.chunk.js.map": "/HAIComposition/static/js/787.0ddc7d4c.chunk.js.map"
+    "main.css": "/VIS-AI-COMP/static/css/main.e1a97a90.css",
+    "main.js": "/VIS-AI-COMP/static/js/main.818d40a2.js",
+    "static/js/787.0ddc7d4c.chunk.js": "/VIS-AI-COMP/static/js/787.0ddc7d4c.chunk.js",
+    "index.html": "/VIS-AI-COMP/index.html",
+    "main.e1a97a90.css.map": "/VIS-AI-COMP/static/css/main.e1a97a90.css.map",
+    "main.818d40a2.js.map": "/VIS-AI-COMP/static/js/main.818d40a2.js.map",
+    "787.0ddc7d4c.chunk.js.map": "/VIS-AI-COMP/static/js/787.0ddc7d4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1a97a90.css",
-    "static/js/main.dbee8f3c.js"
+    "static/js/main.818d40a2.js"
   ]
 }
