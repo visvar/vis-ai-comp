@@ -29,6 +29,12 @@ import ScatterPlotIcon from '@mui/icons-material/ScatterPlot'
 import { EPSILON_FLOAT16 } from '@tensorflow/tfjs-core/dist/backends/backend'
 import { toInteger } from 'lodash'
 
+import pianoRoll from './GlyphLegend/pianoRoll.png'
+import glyphs from './GlyphLegend/glyphs.png'
+import piechartPitch from './GlyphLegend/piechartPitch.png'
+import histoJumpDouble from './GlyphLegend/histoJumpDouble.png'
+import histoJumpSingle from './GlyphLegend/histoJumpSingle.png'
+
 const MIDI_NOTES = [
   { pitch: 0, name: 'C', octave: -1, label: 'C-1', frequency: 8.176 },
   { pitch: 1, name: 'C#', octave: -1, label: 'C#-1', frequency: 8.662 },
@@ -3027,11 +3033,21 @@ class ClusterChart extends React.Component {
       // after div style text align auto
       // <div id="pianowithevery">
       // </div>
+      let img = ''
+      if(glyphmode === 'glyphs')
+        img = glyphs
+      else if(glyphmode === 'pianoRoll')
+        img = pianoRoll
+      else if(glyphmode === 'piechartPitch')
+        img = piechartPitch
+      else if(glyphmode === 'histoJumpDouble')
+        img = histoJumpDouble
+      else if(glyphmode === 'histoJumpSingle')
+        img = histoJumpSingle
 
-      let img = './GlyphLegend/' + glyphmode + '.png'
       try {
         if (glyphmode === 'circles') {
-          img = ''
+          
           document.getElementById('glyphLegend').style.display = 'none'
         }else{
           document.getElementById('glyphLegend').style.display = 'inline-block'
