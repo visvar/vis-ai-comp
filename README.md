@@ -1,20 +1,20 @@
 # Visualization for AI-Assisted Composing 
 
-[![alt text](https://github.tik.uni-stuttgart.de/VISUS/HAIComposition/blob/master/Pictures/Overview.png "Link to website of our tool")](http://google.com)
+[![alt text](https://github.com/visvar/vis-ai-comp/blob/main/Pictures/TeaserImage.png "Link to website of our tool")](http://google.com)
 insert Link to website 
 #### Click on the teaser image to try the prototype yourself 
 
-#### A 
+#### Top 
 Piano Roll allows to control the composition via notewise editing. User can also edit suggestion samples.
 
-#### B
+#### Bottom Left
 Icicle plot with detailed piano rolls shows the graph structure and therefore continuation and fill-ins. All children (continuations) split the height of the parent equally. Therefore, the X-axis shows the relationship of to samples, as well as a common timeline.
 Each node has an individual Y-axis, because height varies with number of samples.
 
-#### C
+#### Bottom Middle
 Node-Link with simple piano rolls shows the same structure as **B**. Relationship between samples are displayed through links, allowing sorting by different metrics. The metric value is also encoded in the width of the link.
 
-#### D
+#### Bottom Right
 Similarity-based scatterplot uses a similarity metric and dimensionality reduction to cluster and show many samples at once. In this scatterplot, samples are placed so similar samples are near each other. The similarity metric considers rhythm and melodic structure independently and combines them using a user chosen weight. Groups can be selected using the circular brush and inspected with the additional aggregations and visualizations. In order to get information about the samples directly in the scatterplot, users can change the representation to glyphs (small symbols which represent some kind of data visually). Gridifing the scatterplot helps avoiding overlap and clutter of glyphs.
 
 #### Additional View not shown in Figure
