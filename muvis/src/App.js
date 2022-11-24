@@ -3592,6 +3592,20 @@ function App () {
               </Typography>
               <Grid container direction='column' item spacing={2} align='left'>
                 <Grid
+                    item
+                    xs='auto'
+                    style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}
+                  >
+                  <Typography style={{ minWidth: '7%' }} id='modal-modal-description' sx={{ mt: 2, mr: 5 }}>
+                    Links:
+                  </Typography>
+                  <span style={{ whiteSpace: 'pre-line' }}>
+                    <a href="https://visvar.github.io/" target="_blank"> Our group website</a>
+                    {'\n'}
+                    <a href="https://github.com/visvar/vis-ai-comp" target="_blank">Github for this project</a>
+                  </span>
+                </Grid>
+                <Grid
                   item
                   xs='auto'
                   style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}
@@ -3759,20 +3773,6 @@ function App () {
                     'blue = correlation\n' +
                     'red = negative correlation\n' +
                     'yellow = no correlation'}
-                  </span>
-                </Grid>
-                <Grid
-                  item
-                  xs='auto'
-                  style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}
-                >
-                  <Typography style={{ minWidth: '7%' }} id='modal-modal-description' sx={{ mt: 2, mr: 5 }}>
-                    Guitar:
-                  </Typography>
-                  <span style={{ whiteSpace: 'pre-line' }}>
-                    {'The guitar view shows simple guitar representations to ease the possibilites for guitarists.\n' +
-                    'When a sample is selected the notes are additionally shown in Tab notation.\n' +
-                    'The Fredboard view shows which strings and freds to play while listening to the music.'}
                   </span>
                 </Grid>
               </Grid>
