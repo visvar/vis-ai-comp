@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/vis-ai-comp/static/css/main.e1a97a90.css",
+    "main.js": "/vis-ai-comp/static/js/main.17ff423d.js",
+    "static/js/787.0ddc7d4c.chunk.js": "/vis-ai-comp/static/js/787.0ddc7d4c.chunk.js",
+    "static/media/glyphs.png": "/vis-ai-comp/static/media/glyphs.6dca58630ef7a03a0409.png",
+    "static/media/piechartPitch.png": "/vis-ai-comp/static/media/piechartPitch.42e1b1a2e8cbb7463cf1.png",
+    "static/media/histoJumpDouble.png": "/vis-ai-comp/static/media/histoJumpDouble.5bd7a1f40242d6c91c41.png",
+    "static/media/histoJumpSingle.png": "/vis-ai-comp/static/media/histoJumpSingle.168176f434c8a65576f5.png",
+    "static/media/pianoRoll.png": "/vis-ai-comp/static/media/pianoRoll.52ce8cb374b0ac6fae45.png",
+    "index.html": "/vis-ai-comp/index.html",
+    "main.e1a97a90.css.map": "/vis-ai-comp/static/css/main.e1a97a90.css.map",
+    "main.17ff423d.js.map": "/vis-ai-comp/static/js/main.17ff423d.js.map",
+    "787.0ddc7d4c.chunk.js.map": "/vis-ai-comp/static/js/787.0ddc7d4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1a97a90.css",
+    "static/js/main.17ff423d.js"
+  ]
+}
