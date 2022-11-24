@@ -1,6 +1,5 @@
 # Visualization for AI-Assisted Composing 
 
-[![alt text](https://github.com/visvar/vis-ai-comp/blob/main/Material/TeaserImage.png "Link to website of our tool")](https://visvar.github.io/vis-ai-comp/)
 [<img src="https://github.com/visvar/vis-ai-comp/blob/main/Material/TeaserImage.png">](https://visvar.github.io/vis-ai-comp/)
 #### Click on the teaser image to try the prototype yourself 
 
