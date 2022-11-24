@@ -1,7 +1,6 @@
 # Visualization for AI-Assisted Composing 
 
-[![alt text](https://github.com/visvar/vis-ai-comp/blob/main/Material/TeaserImage.png "Link to website of our tool")](http://google.com)
-insert Link to website 
+[![alt text](https://github.com/visvar/vis-ai-comp/blob/main/Material/TeaserImage.png "Link to website of our tool")]([http://google.com](https://visvar.github.io/vis-ai-comp/))
 #### Click on the teaser image to try the prototype yourself 
 
 #### Top 
@@ -21,11 +20,12 @@ Similarity-based scatterplot uses a similarity metric and dimensionality reducti
 A correlation matrix and the corresponding scatterplot shows our different metrics and allow for pairwise analysis. By selecting an area in the matrix and the two metrics, all samples are shown in the scatterplot as point, where position represents these two metrics. One Example could be to inspect the relationship between parameters like temperature
 and metrics like similarity. Some examples are shown in the paper or the supplemental material.
 
-### [Supplemental Material](https://www.google.com "Supplemental Material for our paper, including additional information, images, and answers to questions.")
+### [Supplemental Material](https://github.com/visvar/vis-ai-comp/blob/main/Material/supplementalMaterial.pdf "Supplemental Material for our paper, including additional information, images, and answers to questions.")
 <!---  
 Where supplemental Material? Google Doc and link? or Github folder with pictures and file? or directly here?
 --->
-In our Supplemental Material we provide additional information about our [Paper](http://google.com). This includes an extended version of our evaluation, additional images showing different scenarios of visualizations or underlining the concepts mentioned in our Paper. Further, we answer some interesting questions to add information to our Paper and amplify understanding.
+In our Supplemental Material we provide additional information about our [Paper](https://github.com/visvar/vis-ai-comp/blob/main/Material/ISMIR_2022_Human_AI_Composition2411.pdf). This includes an extended version of our evaluation, additional images showing different scenarios of visualizations or underlining the concepts mentioned in our Paper. Further, we answer some interesting questions to add information to our Paper and amplify understanding.
+We also provide a Video of our [Presentation](https://github.com/visvar/vis-ai-comp/blob/main/Material/video.mp4) and our [Poster](https://github.com/visvar/vis-ai-comp/blob/main/Material/poster.pdf), which we both presented at ISMIR 2022.
 
 ### Information on using the prototype
 #### Click on the teaser image to try the prototype yourself on our hosted website
