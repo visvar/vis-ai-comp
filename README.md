@@ -25,7 +25,7 @@ and metrics like similarity. Some examples are shown in the paper or the supplem
 Where supplemental Material? Google Doc and link? or Github folder with pictures and file? or directly here?
 --->
 In our Supplemental Material we provide additional information about our [Paper](https://github.com/visvar/vis-ai-comp/blob/main/Material/ISMIR_2022_Human_AI_Composition2411.pdf). This includes an extended version of our evaluation, additional images showing different scenarios of visualizations or underlining the concepts mentioned in our Paper. Further, we answer some interesting questions to add information to our Paper and amplify understanding.
-We also provide our [Presentation slides](https://github.com/visvar/vis-ai-comp/blob/main/Material/slides.pdf), a video of them [Video](https://github.com/visvar/vis-ai-comp/blob/main/Material/video.mp4) and our [Poster](https://github.com/visvar/vis-ai-comp/blob/main/Material/poster.pdf), which we all presented at ISMIR 2022.
+We also provide our [Presentation slides](https://github.com/visvar/vis-ai-comp/blob/main/Material/slides.pdf), a video of them [Video](https://www.youtube.com/watch?v=EN0FZW5tdbI) ([Download](https://github.com/visvar/vis-ai-comp/blob/main/Material/video.mp4)) and our [Poster](https://github.com/visvar/vis-ai-comp/blob/main/Material/poster.pdf), which we all presented at ISMIR 2022.
 
 ### Information on using the prototype
 #### Click on the teaser image to try the prototype yourself on our hosted website
