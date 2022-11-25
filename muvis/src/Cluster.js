@@ -27,7 +27,7 @@ import FormControl from '@mui/material/FormControl'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 import ScatterPlotIcon from '@mui/icons-material/ScatterPlot'
 import { EPSILON_FLOAT16 } from '@tensorflow/tfjs-core/dist/backends/backend'
-import { toInteger } from 'lodash'
+import { toInteger, uniq } from 'lodash'
 
 import pianoRoll from './GlyphLegend/pianoRoll.png'
 import glyphs from './GlyphLegend/glyphs.png'
@@ -310,10 +310,17 @@ class ClusterChart extends React.Component {
       const widthscale = seiteScatter * scale
       const heightscale = seiteScatter * scale
 
-      const modelUsedFlag = true// this.props.modelUsedFlag
+      let modelUsedFlag = this.props.modelUsedFlag
+
       const loadedModels = this.props.loadedModels
 
       const modelUsed = this.props.data.modelUsed
+      const unique = modelUsed.filter((v, i, a) => a.indexOf(v) === i)
+      if(unique.length <= 2)
+        modelUsedFlag = true
+      else  
+        modelUsedFlag = false
+
       const parent = this.props.data.parent
       const callback = this.props.callback
       const data = this.props.data
@@ -2515,13 +2522,16 @@ class ClusterChart extends React.Component {
             }
           })
           ctx.strokeStyle = 'grey'
+          ctx.lineWidth = 0.5
           //ctx.strokeOpacity = 0.3
           if ((!modelUsedFlag) && modelUsed[j] !== -1) {
             ctx.strokeStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
             ctx.fillStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
+            ctx.lineWidth = 1
+            mvlib.Canvas.drawRoundedRect(ctx, scaleX(0) - 2, scaleY(max) - 2, size * 2 + 2, size + 2, 0)
+          }else{
+            mvlib.Canvas.drawRoundedRect(ctx, scaleX(0) - 1, scaleY(max) - 1, size * 2 + 1, size + 1, 0)
           }
-          ctx.lineWidth = 0.5
-          mvlib.Canvas.drawRoundedRect(ctx, scaleX(0) - 1, scaleY(max) - 1, size * 2 + 1, size + 1, 0)
           ctx.stroke()
         } else {
           scaleY = d3.scaleLinear().domain([0, max]).range([y, y - size])
@@ -2559,12 +2569,16 @@ class ClusterChart extends React.Component {
           ctx.strokeStyle = 'grey'
           //ctx.strokeOpacity = 0.3
           ctx.lineWidth = 0.5
+          mvlib.Canvas.drawLine(ctx, scaleX(12), y, scaleX(24) + barsize, y)
           if ((!modelUsedFlag) && modelUsed[j] !== -1) {
             ctx.strokeStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
             ctx.fillStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
+            ctx.lineWidth = 1
+            mvlib.Canvas.drawRoundedRect(ctx, scaleX(12) - 2, scaleY(max) - 2, size * 2 + 2, size * 2 + 2, 0)
+          }else{
+            mvlib.Canvas.drawRoundedRect(ctx, scaleX(0) - 1, scaleY(max) - 1, size * 2 + 1, size + 1, 0)
           }
-          mvlib.Canvas.drawLine(ctx, scaleX(12), y, scaleX(24) + barsize, y)
-          mvlib.Canvas.drawRoundedRect(ctx, scaleX(12) - 1, scaleY(max) - 1, size * 2 + 1, size * 2 + 1, 0)
+          
           ctx.stroke()
         }
         ctx.fillStyle = c
@@ -2709,11 +2723,13 @@ class ClusterChart extends React.Component {
             lastend = (lastend + (Math.PI * 2 * (data[i] / myTotal))) % (Math.PI * 2)
           }
           ctx.fillStyle = c
+          ctx.lineWidth = 1
           // mvlib.Canvas.drawFilledCircle(ctx,x,y,5);
           if ((!modelUsedFlag) && modelUsed[j] !== -1) {
             ctx.strokeStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
             ctx.fillStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
-            mvlib.Canvas.drawCircle(ctx, x, y, size + 1)
+            ctx.lineWidth = 6
+            mvlib.Canvas.drawCircle(ctx, x, y, size + 3)
           }
         }
         if (myTotal ===1) {
@@ -2734,7 +2750,7 @@ class ClusterChart extends React.Component {
           if ((!modelUsedFlag) && modelUsed[j] !== -1) {
             ctx.strokeStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
             ctx.fillStyle = modelColors3(modelUsed[j])// d3.schemeTableau10[4+(2*modelUsed[j-1])+modelUsed[j-1]%2];
-            mvlib.Canvas.drawCircle(ctx, x, y, size + 1)
+            mvlib.Canvas.drawCircle(ctx, x, y, size + 3)
           }
         }
       }
