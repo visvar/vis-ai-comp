@@ -3600,7 +3600,7 @@ function App () {
                     Links:
                   </Typography>
                   <span style={{ whiteSpace: 'pre-line' }}>
-                    <a href="https://visvar.github.io/" target="_blank"> Our group website</a>
+                    <a href="https://visvar.github.io/" target="_blank"> Our researchgroup</a>
                     {'\n'}
                     <a href="https://github.com/visvar/vis-ai-comp" target="_blank">Github for this project</a>
                   </span>
