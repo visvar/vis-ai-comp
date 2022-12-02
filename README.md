@@ -30,8 +30,6 @@ We also provide our [Presentation slides](https://github.com/visvar/vis-ai-comp/
 ### Information on using the prototype
 #### Click on the teaser image to try the prototype yourself on our hosted website
 
-**TODO** make video to show how things work? like small things?
-
 ##### Help when starting
 For starting, you can record a melody by clicking on the *Mic* button and then playing a melody with the keyboard or a midi device. The keyboard can record the keys \*a = C4*, *w = C#4* ... until *l = D5*. \To stop recording press the *Mic* button again.\
 Edit single notes in the large Piano roll (**A**) with drag and drop or draw a rectangle with left mouseclick to select multiple notes and drag the whole group. Adjust the duration of a note by hovering the right edge of a note and drag it to the desired duration.\
@@ -46,23 +44,27 @@ Right click on a piano roll to play the sample.\
 Brush and *N* to create new note.\
 Hold a note with left click and *C* to copy that note. Click *V* to paste the copied note.\
 
-### Development
-npm run ...\
-explain different folders?
-**TODO** How is the model plugin file?
-
 
 ### Authors 
 [Simeon Rau](https://visvar.github.io/members/simeon_rau.html), [Frank Heyen](https://visvar.github.io/members/frank_heyen.html), and [Michael Sedlmair](https://visvar.github.io/members/michael_sedlmair.html) from the [VISVAR](https://visvar.github.io/) group at [VISUS](https://www.visus.uni-stuttgart.de/) and [Stefan Wagner](https://www.iste.uni-stuttgart.de/institute/team/Wagner-00017/) from [ISTE](https://www.iste.uni-stuttgart.de/), both institutes at the [University of Stuttgart](https://www.uni-stuttgart.de/).
 
 ### Citation:
-<!---  
-@inproceedings{SRFH22,\
-  title = {Visualization for AI-Assisted Composing},\
-  author = {Simeon Rau and Frank Heyen and Stefan Wagner and Michael Sedlmair},\
-  year = {2022},\
-  booktitle = {Proc. 23nd International Society for Music Information Retrieval Conf. (ISMIR)},\
-  pages = {?},\
-  doi = {?}\
+
+```
+@inproceedings{rau2022visualization,
+  author       = {Simeon Rau and
+                  Frank Heyen and
+                  Stefan Wagner and
+                  Michael Sedlmair},
+  title        = {Visualization for AI-Assisted Composing},
+  booktitle    = {{Proceedings of the 23rd International Society for 
+                   Music Information Retrieval Conference (ISMIR)}},
+  year         = {2022},
+  pages        = {151-159},
+  publisher    = {ISMIR},
+  address      = {Bengaluru, India},
+  venue        = {Bengaluru, India},
+  doi          = {10.5281/zenodo.7316618},
+  url          = {https://doi.org/10.5281/zenodo.7316618}
 }
---->
+```
