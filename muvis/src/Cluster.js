@@ -2576,7 +2576,7 @@ class ClusterChart extends React.Component {
             ctx.lineWidth = 1
             mvlib.Canvas.drawRoundedRect(ctx, scaleX(12) - 2, scaleY(max) - 2, size * 2 + 2, size * 2 + 2, 0)
           }else{
-            mvlib.Canvas.drawRoundedRect(ctx, scaleX(0) - 1, scaleY(max) - 1, size * 2 + 1, size + 1, 0)
+            mvlib.Canvas.drawRoundedRect(ctx, scaleX(12) - 1, scaleY(max) - 1, size * 2 + 1, size * 2 + 1, 0)
           }
           
           ctx.stroke()
