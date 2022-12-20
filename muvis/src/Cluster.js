@@ -316,6 +316,7 @@ class ClusterChart extends React.Component {
 
       const modelUsed = this.props.data.modelUsed
       const unique = modelUsed.filter((v, i, a) => a.indexOf(v) === i)
+      
       if(unique.length <= 2)
         modelUsedFlag = true
       else  
@@ -2173,11 +2174,13 @@ class ClusterChart extends React.Component {
                 // mvlib.Canvas.drawFilledCircle(context, xArray[i], yArray[i], (size) * scale)
                 mvlib.Canvas.drawCircle(context, xArray[i], yArray[i], size * scale)
               } else if (glyphmode === 'glyphs') {
-                if(starglyphmode && !previousStarglyph){
+                console.log(starglyphmode)
+                if(starglyphmode){// && !previousStarglyph){
                   maxvalues = calcGlyphMax()
-                }else if(!starglyphmode && previousStarglyph){
+                }else if(!starglyphmode){// && previousStarglyph){
                   maxvalues = {maxl:8,maxnum:16, maxvar:10}
                 }
+                console.log(maxvalues)
                 calcGlyph(context, xArray[i], yArray[i], size * scale, tcol, i, quotient, dataChanged, maxvalues)
               } else if (glyphmode === 'piechartPitch') {
                 calcPie(context, xArray[i], yArray[i], size * scale, tcol, notes[i], i, true, dataChanged)
@@ -3291,7 +3294,7 @@ class ClusterChart extends React.Component {
                   </MenuItem>
                   <MenuItem sx={{ color: 'text.main', backgroundColor: 'toolbar.main', justifyContent: 'center' }}>
                     <Tooltip onOpen={tooltip('infoGlyph', 'starglyph')} title={<span style={{ whiteSpace: 'pre-line' }}>{tooltipText}</span>} placement='right'>
-                      <FormControlLabel color='secondary' checked={starglyphmode} control={<Switch onClick={() => { starglyphmode ? starglyphmode = false : starglyphmode = true; this.handleRedrawState() }} />} label='Starglyph scale' labelPlacement='bottom' />
+                      <FormControlLabel color='secondary' checked={starglyphmode} control={<Switch onClick={() => { starglyphmode ? starglyphmode = false : starglyphmode = true; this.render(); }} />} label='Starglyph scale' labelPlacement='bottom' />
                       {/** <button className='button' id='histoGlyphRela' onClick={() => { relativemode ? relativemode = false : relativemode = true; this.render() }}>histGlyphRelativeMode</button> */}
                     </Tooltip>
                   </MenuItem>
