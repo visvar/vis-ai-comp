@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vis-ai-comp/static/css/main.e1a97a90.css",
-    "main.js": "/vis-ai-comp/static/js/main.73410265.js",
+    "main.js": "/vis-ai-comp/static/js/main.a8d63d5f.js",
     "static/js/787.0ddc7d4c.chunk.js": "/vis-ai-comp/static/js/787.0ddc7d4c.chunk.js",
     "static/media/glyphs.png": "/vis-ai-comp/static/media/glyphs.6dca58630ef7a03a0409.png",
     "static/media/piechartPitch.png": "/vis-ai-comp/static/media/piechartPitch.110c449c591b4b76c1dc.png",
@@ -10,11 +10,11 @@
     "static/media/pianoRoll.png": "/vis-ai-comp/static/media/pianoRoll.52ce8cb374b0ac6fae45.png",
     "index.html": "/vis-ai-comp/index.html",
     "main.e1a97a90.css.map": "/vis-ai-comp/static/css/main.e1a97a90.css.map",
-    "main.73410265.js.map": "/vis-ai-comp/static/js/main.73410265.js.map",
+    "main.a8d63d5f.js.map": "/vis-ai-comp/static/js/main.a8d63d5f.js.map",
     "787.0ddc7d4c.chunk.js.map": "/vis-ai-comp/static/js/787.0ddc7d4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1a97a90.css",
-    "static/js/main.73410265.js"
+    "static/js/main.a8d63d5f.js"
   ]
 }
