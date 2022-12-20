@@ -3291,7 +3291,7 @@ class ClusterChart extends React.Component {
                   </MenuItem>
                   <MenuItem sx={{ color: 'text.main', backgroundColor: 'toolbar.main', justifyContent: 'center' }}>
                     <Tooltip onOpen={tooltip('infoGlyph', 'starglyph')} title={<span style={{ whiteSpace: 'pre-line' }}>{tooltipText}</span>} placement='right'>
-                      <FormControlLabel color='secondary' defaultValue={starglyphmode} checked={starglyphmode} control={<Switch onClick={() => { starglyphmode ? starglyphmode = false : starglyphmode = true; this.handleRedrawState() }} />} label='Starglyph scale' labelPlacement='bottom' />
+                      <FormControlLabel color='secondary' checked={starglyphmode} control={<Switch onClick={() => { starglyphmode ? starglyphmode = false : starglyphmode = true; this.handleRedrawState() }} />} label='Starglyph scale' labelPlacement='bottom' />
                       {/** <button className='button' id='histoGlyphRela' onClick={() => { relativemode ? relativemode = false : relativemode = true; this.render() }}>histGlyphRelativeMode</button> */}
                     </Tooltip>
                   </MenuItem>
