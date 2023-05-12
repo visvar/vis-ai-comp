@@ -4,6 +4,8 @@
 
 #### Click [here](https://visvar.github.io/vis-ai-comp/) to try the prototype 
 
+#### Click [here](https://visvar.github.io/vis-ai-comp-simple/) to try a simple version of the prototype
+
 #### This work was published at [ISMIR 2022](https://ismir2022program.ismir.net/poster_217.html)
 
 #### Piano Roll (Top)
